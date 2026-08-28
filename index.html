@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#F9DBDB" />
+    <meta name="description" content="A tiny, very important question." />
+    <title>A little question for you</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23b95f70' d='M50 88 12 51C-7 29 23 3 50 28 77 3 107 29 88 51Z'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-card">Skip to the question</a>
+
+    <div class="ambient" aria-hidden="true">
+      <span class="orb orb-one"></span>
+      <span class="orb orb-two"></span>
+      <span class="heart heart-one"></span>
+      <span class="heart heart-two"></span>
+      <span class="heart heart-three"></span>
+    </div>
+
+    <button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false" aria-label="Turn sound on">
+      <svg class="sound-on" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M11 5 6.8 8.5H3.5v7h3.3L11 19V5Z" />
+        <path d="M15 9.2a4 4 0 0 1 0 5.6M17.7 6.7a7.5 7.5 0 0 1 0 10.6" />
+      </svg>
+      <svg class="sound-off" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M11 5 6.8 8.5H3.5v7h3.3L11 19V5Z" />
+        <path d="m16 10 5 5m0-5-5 5" />
+      </svg>
+      <span class="sound-label">Sound off</span>
+    </button>
+
+    <main class="page-shell">
+      <section class="card" id="main-card" aria-labelledby="question">
+        <div class="card-glow" aria-hidden="true"></div>
+
+        <div class="question-state" id="question-state">
+          <div class="eyebrow"><span class="eyebrow-dot"></span><span id="eyebrow-text">A tiny question</span></div>
+
+          <div class="love-note" aria-hidden="true">
+            <svg viewBox="0 0 96 78">
+              <path class="note-paper" d="M8 16c0-4 3-7 7-7h66c4 0 7 3 7 7v46c0 4-3 7-7 7H15c-4 0-7-3-7-7V16Z" />
+              <path class="note-fold" d="m10 15 38 29 38-29M10 64l27-27m49 27L59 37" />
+              <path class="note-heart" d="M48 56c-11-7-16-12-16-19 0-8 10-11 16-4 6-7 16-4 16 4 0 7-5 12-16 19Z" />
+            </svg>
+          </div>
+
+          <p class="recipient" id="recipient" hidden></p>
+          <h1 id="question">Will you go on a date with me? <span aria-hidden="true">❤️</span></h1>
+          <p class="subtitle" id="subtitle">I made a whole website for this, so no pressure.</p>
+
+          <div class="actions" aria-label="Choose your answer">
+            <button class="yes-button" id="yes-button" type="button">
+              <span>Yes</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.7S3.5 15.5 3.5 9.3A4.3 4.3 0 0 1 12 8a4.3 4.3 0 0 1 8.5 1.3c0 6.2-8.5 11.4-8.5 11.4Z" /></svg>
+            </button>
+            <span class="no-slot" id="no-slot" aria-hidden="true"></span>
+          </div>
+
+          <p class="fine-print" id="fine-print">Choose wisely. The website has opinions.</p>
+        </div>
+
+        <div class="success-state" id="success-state" aria-hidden="true">
+          <div class="success-heart" aria-hidden="true">
+            <svg viewBox="0 0 96 96"><path d="M48 83S13 62 13 36.5C13 18 36 10.7 48 27c12-16.3 35-9 35 9.5C83 62 48 83 48 83Z" /></svg>
+            <span class="spark spark-a"></span><span class="spark spark-b"></span><span class="spark spark-c"></span>
+          </div>
+          <p class="success-kicker">Excellent choice</p>
+          <h2 id="success-title" tabindex="-1">YAYYYYY ❤️</h2>
+          <p class="success-message" id="success-message">Date secured.</p>
+          <p class="success-subtext" id="success-subtext">See? That wasn’t so difficult 😌</p>
+          <p class="signature" id="signature" hidden></p>
+        </div>
+      </section>
+    </main>
+
+    <button class="no-button" id="no-button" type="button" aria-describedby="fine-print">No</button>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <div class="celebration" id="celebration" aria-hidden="true"></div>
+  </body>
+</html>
+
