@@ -48,9 +48,16 @@
             </svg>
           </div>
 
-          <p class="recipient" id="recipient" hidden></p>
+          <p class="recipient" id="recipient"></p>
           <h1 id="question">Will you go on a date with me? <span aria-hidden="true">❤️</span></h1>
           <p class="subtitle" id="subtitle">I made a whole website for this, so no pressure.</p>
+
+          <div class="eyes" id="eyes" aria-hidden="true">
+            <span class="eye eye-left"><span class="pupil"></span></span>
+            <span class="eye eye-right"><span class="pupil"></span></span>
+          </div>
+
+          <div class="story-panel" id="story-panel" aria-live="polite" hidden></div>
 
           <div class="actions" aria-label="Choose your answer">
             <button class="yes-button" id="yes-button" type="button">
@@ -64,21 +71,36 @@
         </div>
 
         <div class="success-state" id="success-state" aria-hidden="true">
-          <div class="success-heart" aria-hidden="true">
-            <svg viewBox="0 0 96 96"><path d="M48 83S13 62 13 36.5C13 18 36 10.7 48 27c12-16.3 35-9 35 9.5C83 62 48 83 48 83Z" /></svg>
-            <span class="spark spark-a"></span><span class="spark spark-b"></span><span class="spark spark-c"></span>
+          <div class="victory-phase" id="victory-phase">
+            <div class="success-heart" aria-hidden="true">
+              <svg viewBox="0 0 96 96"><path d="M48 83S13 62 13 36.5C13 18 36 10.7 48 27c12-16.3 35-9 35 9.5C83 62 48 83 48 83Z" /></svg>
+              <span class="spark spark-a"></span><span class="spark spark-b"></span><span class="spark spark-c"></span>
+            </div>
+            <p class="success-kicker">Lady Boss Approval Received ✓</p>
+            <h2 id="success-title" tabindex="-1">PROPOSAL APPROVED ❤️</h2>
+            <p class="success-message" id="success-message">Date secured.</p>
+            <p class="success-subtext" id="success-subtext">Management made the correct decision.</p>
           </div>
-          <p class="success-kicker">Excellent choice</p>
-          <h2 id="success-title" tabindex="-1">YAYYYYY ❤️</h2>
-          <p class="success-message" id="success-message">Date secured.</p>
-          <p class="success-subtext" id="success-subtext">See? That wasn’t so difficult 😌</p>
-          <p class="signature" id="signature" hidden></p>
+
+          <div class="sincere-phase" id="sincere-phase" aria-hidden="true">
+            <p class="success-kicker">One quiet thing</p>
+            <h2 id="thank-you-title" tabindex="-1">Thank you, 老板娘. ❤️</h2>
+            <p class="gratitude" id="gratitude"></p>
+            <p class="temper" id="temper">Temper?</p>
+            <p class="future-line" id="future-line">Let's work for Porsche of our life. 🩷💜</p>
+            <div class="final-wink" aria-hidden="true">
+              <span class="wink-eye wink-closed"></span><span class="wink-eye"></span>
+            </div>
+            <p class="signature" id="signature"></p>
+            <button class="replay-button" id="replay-button" type="button">Replay our nonsense</button>
+          </div>
         </div>
       </section>
     </main>
 
     <button class="no-button" id="no-button" type="button" aria-describedby="fine-print">No</button>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <div class="mosquito" id="mosquito" aria-hidden="true">🦟</div>
     <div class="celebration" id="celebration" aria-hidden="true"></div>
   </body>
 </html>

@@ -1,10 +1,12 @@
-# A Little Question
+# A Little Question — V2
 
-A polished, playful static date-invitation website. The **Yes** button is friendly. The **No** button has other plans.
+A polished, deeply personalized date-invitation for WenWen. It begins sweetly, turns into Baby's unnecessarily sophisticated Lady Boss approval system, and ends somewhere quieter.
+
+V2 adds a paced relationship-story sequence, animated pleading/side-eye/wink illustrations, proposal records, private Easter eggs, a calmer sincere ending, and a subtle replay control while preserving the original viewport-safe No-button mechanics.
 
 ## Customize it
 
-Open `app.js` and edit the clearly marked `CONFIG` object at the top. It contains the question, names, success copy, escalation messages, chaos level, sound setting, celebration intensity, and the complete theme.
+Open `app.js` and edit the clearly marked `CONFIG` object at the top. It contains the recipient and sender, opening and success copy, milestone story stages, chaos level, sound setting, celebration intensity, and the complete theme.
 
 The signature color is exposed as:
 
